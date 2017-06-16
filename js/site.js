@@ -2,7 +2,49 @@
  * Created by Yunus on 22.3.2015.
  */
 
+var posts = []
+localStorage.items = posts;
+
 $(function() {
+
+
+
+    $.ajax({
+
+        url: '_posts/',
+        success: function (data) {
+
+
+            //List all xml file names in the page
+            $(data).find('li a').each(function () {
+
+                var filename = $(this).text();
+
+                posts.push(JSON.stringify(isimduzenle(filename)));
+
+                localStorage.items = posts;
+
+            });
+
+
+
+            $.each(posts,function (key,value) {
+
+                value = JSON.parse(value);
+                var post_html ="";
+                post_html += '<div class="post"><div class="title"><a href="./post.html?id='+key+'" >';
+                post_html += value.baslik;
+                post_html += '</a></div><div class="date-time">';
+                post_html += value.tarih;
+                post_html += '</div></div>';
+
+                $(".post-screen").append(post_html);
+            });
+
+
+
+        }
+    });
 
 
 
@@ -68,13 +110,6 @@ $(function() {
 
 */
         // #portfolio
-
-
-
-
-
-
-
 
 });
 

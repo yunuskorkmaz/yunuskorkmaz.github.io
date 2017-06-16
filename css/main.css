@@ -14,8 +14,12 @@
 
 .name {font-size: 45px}
 .info{font-size: 25px;margin-bottom: 30px}
+
+
+
 .sosyal
 {
+    display: flex;
     justify-content: center;
     margin: 0px auto;
 }
@@ -68,6 +72,7 @@
     }
 
 }
+
 
 
 
@@ -356,5 +361,59 @@ display: none;
 
 .bosluk
 {
-    margin-top: 50px;
+    margin-top: 30px;
+
+}
+#blog{
+    padding-bottom: 30px;
+}
+.post{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 5px;
+
+}
+.post .title a{
+font-size: 35px;
+    color: #202020;
+    
+}
+.post .title a:hover{
+    color: #009688;
+}
+
+.post .date-time{
+    color: #7b7b7b;
+    font-size: 18px;
+}
+#blog .row{
+    margin-bottom: 0px;
+}
+
+#iletisim{
+    background-image: url("../images/contact-wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#iletisim .row,.header > .row{
+    background-color: rgba(0,0,0,.8);
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+#header{
+    background-image: url("../images/bg3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -64px;
+}
+.blog-post{
+    margin: 25px 0;
+}
+.blog-post > p{
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 40px;
 }
