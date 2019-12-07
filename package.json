@@ -5,10 +5,13 @@
     "author": "Yunus Korkmaz <yunuskorkmaz95@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "start": "./node_modules/.bin/gitfolio run",
+        "start": "gitfolio run",
+        "publish": "ncp ./dist ./ && rimraf ./dist/",
         "build": "gitfolio build yunuskorkmaz --sort pushed --order desc --theme dark --twitter yunuskorkmaz --linkedin yunus-korkmaz"
     },
     "dependencies": {
-        "gitfolio": "^0.1.5"
+        "gitfolio": "^0.1.5",
+        "ncp": "^2.0.0",
+        "rimraf": "^3.0.0"
     }
 }
