@@ -1,0 +1,10 @@
+{
+    "name": "yunuskorkmaz.github.io",
+    "version": "1.0.0",
+    "repository": "https://github.com/yunuskorkmaz/yunuskorkmaz.github.io",
+    "author": "Yunus Korkmaz <yunuskorkmaz95@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "gitfolio build yunuskorkmaz --sort pushed --order desc --theme dark --twitter yunuskorkmaz --linkedin yunus-korkmaz"
+    }
+}
