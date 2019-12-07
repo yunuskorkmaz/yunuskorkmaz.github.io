@@ -6,7 +6,7 @@
     "license": "MIT",
     "scripts": {
         "start": "./node_modules/.bin/gitfolio run",
-        "build": "./node_modules/.bin/gitfolio build yunuskorkmaz --sort pushed --order desc --theme dark --twitter yunuskorkmaz --linkedin yunus-korkmaz"
+        "build": "gitfolio build yunuskorkmaz --sort pushed --order desc --theme dark --twitter yunuskorkmaz --linkedin yunus-korkmaz"
     },
     "dependencies": {
         "gitfolio": "^0.1.5"
